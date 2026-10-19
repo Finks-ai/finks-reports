@@ -1,0 +1,71 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Finks private companies 2026-10-20</title><style>
+:root{--pass:#007a5a;--warn:#b25e00;--fail:#c0392b;--error:#7b3fa0;--skip:#6b7280;--line:#e5e7eb;--muted:#6b7280}
+*{box-sizing:border-box}
+body{font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#111827;
+background:#f9fafb;margin:0}
+main{max-width:1200px;margin:0 auto;padding:24px}
+h1{font-size:24px;margin:0 0 4px}
+h2{font-size:18px;margin:32px 0 8px;border-bottom:1px solid var(--line);padding-bottom:4px}
+a{color:#1d4ed8}
+nav{margin-bottom:16px}
+.muted{color:var(--muted)}
+.small{font-size:12px}
+.counts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.pill{display:inline-block;border-radius:999px;padding:2px 10px;font-weight:600;border:1px solid currentColor}
+.st-pass{color:var(--pass)}
+.st-warn{color:var(--warn)}
+.st-fail{color:var(--fail)}
+.st-error{color:var(--error)}
+.st-skip{color:var(--skip)}
+.f-pass{fill:var(--pass)}
+.f-warn{fill:var(--warn)}
+.f-fail{fill:var(--fail)}
+.f-error{fill:var(--error)}
+.f-skip{fill:#d1d5db}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.card h3{margin:0 0 6px;font-size:15px;display:flex;justify-content:space-between}
+.bar{display:block;margin:6px 0;border-radius:3px}
+.about{font-size:12px;color:#374151;margin:8px 0 0;border-top:1px solid var(--line);padding-top:6px}
+.chg{font-size:28px;font-weight:700}
+.up{color:var(--fail)}
+.down{color:var(--pass)}
+.chart{background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:12px 0}
+.chart h3{margin:0 0 4px;font-size:15px}
+.ax{font-size:10px;fill:#6b7280}
+.ev{font-size:10px;fill:#b25e00;font-weight:700}
+.done{color:var(--pass)}
+.prog{color:var(--warn)}
+.plan{color:var(--skip)}
+.f-done{fill:var(--pass)}
+.f-prog{fill:var(--warn)}
+.f-plan{fill:#d1d5db}
+table{border-collapse:collapse;width:100%;background:#fff}
+th,td{border-bottom:1px solid var(--line);padding:4px 8px;text-align:left}
+th{background:#f3f4f6}
+ul{margin:6px 0 0;padding-left:18px}
+.feature{border:2px solid #1d4ed8;margin-bottom:12px}
+</style></head><body><main><nav class="small"><a href="../">Finks reports</a></nav><header><h1>Private companies</h1>
+<div class="muted">as of 2026-10-20 · counts rounded to 2 significant figures</div></header>
+<p>Finks assembles private-company data from public filings, its own news briefs and companies' own announcements. Each fact carries its source; tracked companies are resolved to one company id.</p>
+<h2>Live now</h2><div class=grid>
+<div class=card><div class=muted>SEC Form D offerings</div><div class=chg>780,000</div><div class="small muted">from 370,000 issuers, since 2008</div></div>
+<div class=card><div class=muted>Private holdings in registered fund portfolios</div><div class=chg>3,600</div><div class="small muted">distinct holding names: 13,000 positions in 1,400 funds, from SEC N-PORT reports filed since July 2026</div></div>
+</div><h2>Coming</h2><table><tr><th>Data</th><th>Status</th><th>Measured in testing</th></tr>
+<tr><td>Funding rounds from SEC Form D, fund marks, news and company newsrooms</td><td><span class="prog">in progress</span></td><td>about 236,000 funding rounds and 1.4 million round statements; 644 secondary-market offerings across 25 companies</td></tr>
+<tr><td>Round reports, each marked announced or in talks, with reported valuations</td><td><span class="prog">in progress</span></td><td>145 round reports from news and newsrooms, 71 with a reported valuation</td></tr>
+<tr><td>Federal contract awards (USAspending)</td><td><span class="prog">in progress</span></td><td>about 4,300 awards</td></tr>
+<tr><td>US state business registries and GLEIF company identifiers</td><td><span class="plan">planned</span></td><td>-</td></tr>
+<tr><td>SEC investment adviser filings</td><td><span class="plan">planned</span></td><td>-</td></tr>
+<tr><td>Hiring signals (H-1B and Department of Labor filings)</td><td><span class="plan">planned</span></td><td>-</td></tr>
+<tr><td>Patents and trademarks (USPTO)</td><td><span class="plan">planned</span></td><td>-</td></tr>
+<tr><td>Operating footprint (FAA, FMCSA, EPA, FCC)</td><td><span class="plan">planned</span></td><td>-</td></tr>
+<tr><td>Deal and risk events (FTC early terminations, SAM exclusions)</td><td><span class="plan">planned</span></td><td>-</td></tr>
+</table><h2>Examples</h2><table><tr><th>Company</th><th>Registered funds with a position</th><th>Round reports from news and newsrooms, in testing</th></tr>
+<tr><td>Anthropic</td><td>116</td><td>7 rounds from its newsroom</td></tr>
+<tr><td>OpenAI</td><td>79</td><td>4 round reports: 2 from its newsroom, 2 from news (1 in talks)</td></tr>
+<tr><td>SpaceX</td><td>21</td><td>-</td></tr>
+<tr><td>Anduril</td><td>69</td><td>-</td></tr>
+</table><p class="small muted">Counts only. Funds counted from SEC N-PORT reports filed since July 2026.</p>
+<h2>Provenance</h2><p>Each fact carries a link to its source document and the date it was retrieved; tracked companies are resolved to one company id, and facts drawn from news carry a confidence score.</p></main></body></html>
