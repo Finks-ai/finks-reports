@@ -1,0 +1,1794 @@
+{
+ "cost": {
+  "baseline": [
+   "2026-09-22",
+   "2026-09-30"
+  ],
+  "categories": [
+   "ClickHouse",
+   "orchestration",
+   "compute",
+   "storage",
+   "audit logging"
+  ],
+  "change": {
+   "ClickHouse": -72,
+   "audit logging": null,
+   "compute": 5,
+   "orchestration": -51,
+   "storage": 1033
+  },
+  "days": [
+   "2026-09-01",
+   "2026-09-02",
+   "2026-09-03",
+   "2026-09-04",
+   "2026-09-05",
+   "2026-09-06",
+   "2026-09-07",
+   "2026-09-08",
+   "2026-09-09",
+   "2026-09-10",
+   "2026-09-11",
+   "2026-09-12",
+   "2026-09-13",
+   "2026-09-14",
+   "2026-09-15",
+   "2026-09-16",
+   "2026-09-17",
+   "2026-09-18",
+   "2026-09-19",
+   "2026-09-20",
+   "2026-09-21",
+   "2026-09-22",
+   "2026-09-23",
+   "2026-09-24",
+   "2026-09-25",
+   "2026-09-26",
+   "2026-09-27",
+   "2026-09-28",
+   "2026-09-29",
+   "2026-09-30",
+   "2026-10-01",
+   "2026-10-02",
+   "2026-10-03",
+   "2026-10-04",
+   "2026-10-05",
+   "2026-10-06",
+   "2026-10-07",
+   "2026-10-08",
+   "2026-10-09",
+   "2026-10-10",
+   "2026-10-11",
+   "2026-10-12",
+   "2026-10-13",
+   "2026-10-14",
+   "2026-10-15",
+   "2026-10-16",
+   "2026-10-17",
+   "2026-10-18"
+  ],
+  "events": [
+   {
+    "day": "2026-10-07",
+    "label": "platform migration"
+   },
+   {
+    "day": "2026-10-14",
+    "label": "platform migration"
+   },
+   {
+    "day": "2026-10-15",
+    "label": "service migration"
+   },
+   {
+    "day": "2026-10-18",
+    "label": "service migration"
+   },
+   {
+    "day": "2026-10-19",
+    "label": "service migration"
+   },
+   {
+    "day": "2026-10-20",
+    "label": "platform migration"
+   }
+  ],
+  "index": {
+   "ClickHouse": [
+    57.8,
+    57.5,
+    57.5,
+    57.5,
+    57.5,
+    61.4,
+    57.5,
+    65.1,
+    61.9,
+    56.1,
+    44.7,
+    44.2,
+    44.3,
+    44.3,
+    54.1,
+    51.2,
+    59.5,
+    47.6,
+    48.7,
+    27.2,
+    46.6,
+    65.9,
+    97.2,
+    97.2,
+    97.6,
+    97.2,
+    97.2,
+    100.8,
+    114.3,
+    132.5,
+    86.4,
+    83.6,
+    66.3,
+    66.4,
+    74.3,
+    93.2,
+    49.1,
+    33.3,
+    25.7,
+    23.7,
+    26.7,
+    28.5,
+    26.8,
+    25.3,
+    28.5,
+    26.5,
+    29.3,
+    29.2
+   ],
+   "audit logging": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.9,
+    3.7,
+    21.9,
+    20.0,
+    33.4,
+    30.7,
+    42.4,
+    57.8,
+    60.8,
+    64.6,
+    66.8,
+    76.8,
+    100.9,
+    63.0,
+    122.8,
+    143.3,
+    126.4
+   ],
+   "compute": [
+    63.9,
+    61.5,
+    70.3,
+    69.0,
+    54.8,
+    51.6,
+    58.0,
+    64.0,
+    70.6,
+    74.7,
+    67.9,
+    53.1,
+    51.2,
+    63.5,
+    72.5,
+    78.4,
+    100.1,
+    78.6,
+    86.6,
+    125.7,
+    98.6,
+    96.5,
+    102.5,
+    106.5,
+    105.8,
+    86.7,
+    86.4,
+    103.2,
+    110.3,
+    102.1,
+    105.8,
+    102.2,
+    85.7,
+    88.3,
+    106.4,
+    118.1,
+    145.0,
+    134.5,
+    94.3,
+    81.9,
+    82.7,
+    103.0,
+    109.3,
+    113.3,
+    114.3,
+    109.5,
+    94.1,
+    94.7
+   ],
+   "orchestration": [
+    35.1,
+    25.6,
+    61.4,
+    75.9,
+    38.6,
+    38.6,
+    38.7,
+    61.5,
+    55.8,
+    58.5,
+    54.2,
+    39.3,
+    39.3,
+    58.4,
+    58.4,
+    64.3,
+    59.8,
+    57.9,
+    41.5,
+    42.0,
+    61.1,
+    58.8,
+    77.5,
+    94.2,
+    110.9,
+    99.0,
+    102.8,
+    119.4,
+    122.1,
+    115.3,
+    113.9,
+    106.0,
+    89.5,
+    88.9,
+    107.2,
+    125.9,
+    184.7,
+    129.9,
+    65.2,
+    63.0,
+    65.3,
+    63.6,
+    56.1,
+    74.2,
+    73.4,
+    7.5,
+    37.0,
+    32.7
+   ],
+   "storage": [
+    143.4,
+    129.7,
+    115.8,
+    79.4,
+    71.7,
+    87.3,
+    75.6,
+    88.4,
+    97.1,
+    83.3,
+    80.5,
+    74.8,
+    82.6,
+    93.5,
+    132.5,
+    79.7,
+    82.3,
+    86.1,
+    79.0,
+    80.4,
+    89.3,
+    98.4,
+    140.3,
+    81.7,
+    85.5,
+    78.4,
+    77.7,
+    86.2,
+    127.5,
+    124.2,
+    83.8,
+    119.9,
+    192.1,
+    345.1,
+    361.1,
+    611.8,
+    517.3,
+    556.4,
+    653.6,
+    690.1,
+    716.3,
+    838.9,
+    962.3,
+    1155.3,
+    765.4,
+    1294.9,
+    1491.1,
+    1423.6
+   ]
+  },
+  "new": [
+   "audit logging"
+  ],
+  "now": [
+   "2026-10-12",
+   "2026-10-18"
+  ],
+  "settle_days": 2
+ },
+ "eval": {
+  "as_of": "2026-10-19",
+  "suites": [
+   {
+    "about": "Whether common factual questions get answers that match an independent reference source.",
+    "checks": 249,
+    "day": "2026-10-16",
+    "gates": {
+     "fail": 0,
+     "pass": 1
+    },
+    "rates": [
+     {
+      "day": "2026-10-13",
+      "rate": 72.2
+     },
+     {
+      "day": "2026-10-16",
+      "rate": 92.2
+     }
+    ],
+    "status": {
+     "error": 0,
+     "fail": 5,
+     "pass": 226,
+     "skip": 4,
+     "warn": 14
+    },
+    "suite": "answerability"
+   },
+   {
+    "about": "Whether served data agrees with itself and with independent public sources.",
+    "checks": 243,
+    "day": "2026-10-19",
+    "gates": {
+     "fail": 4,
+     "pass": 162
+    },
+    "rates": [
+     {
+      "day": "2026-10-13",
+      "rate": 83.1
+     },
+     {
+      "day": "2026-10-16",
+      "rate": 85.4
+     },
+     {
+      "day": "2026-10-19",
+      "rate": 88.1
+     }
+    ],
+    "status": {
+     "error": 0,
+     "fail": 15,
+     "pass": 214,
+     "skip": 0,
+     "warn": 14
+    },
+    "suite": "consistency"
+   },
+   {
+    "about": "Share of commonly looked-up companies that have data in each dataset.",
+    "checks": 87,
+    "day": "2026-10-16",
+    "gates": {
+     "fail": 0,
+     "pass": 5
+    },
+    "rates": [
+     {
+      "day": "2026-10-13",
+      "rate": 91.0
+     },
+     {
+      "day": "2026-10-16",
+      "rate": 96.6
+     }
+    ],
+    "status": {
+     "error": 0,
+     "fail": 3,
+     "pass": 84,
+     "skip": 0,
+     "warn": 0
+    },
+    "suite": "coverage"
+   },
+   {
+    "about": "Whether every dataset is rebuilt on schedule and holds current data.",
+    "checks": 604,
+    "day": "2026-10-19",
+    "gates": {
+     "fail": 33,
+     "pass": 113
+    },
+    "rates": [
+     {
+      "day": "2026-10-13",
+      "rate": 91.7
+     },
+     {
+      "day": "2026-10-16",
+      "rate": 97.0
+     },
+     {
+      "day": "2026-10-19",
+      "rate": 88.9
+     }
+    ],
+    "status": {
+     "error": 0,
+     "fail": 46,
+     "pass": 535,
+     "skip": 2,
+     "warn": 21
+    },
+    "suite": "freshness"
+   },
+   {
+    "about": "Hard identity cases (reused tickers, share classes, renamed or delisted listings) resolve correctly.",
+    "checks": 648,
+    "day": "2026-10-16",
+    "gates": {
+     "fail": 2,
+     "pass": 13
+    },
+    "rates": [
+     {
+      "day": "2026-10-13",
+      "rate": 91.5
+     },
+     {
+      "day": "2026-10-16",
+      "rate": 98.9
+     }
+    ],
+    "status": {
+     "error": 0,
+     "fail": 6,
+     "pass": 556,
+     "skip": 86,
+     "warn": 0
+    },
+    "suite": "fringe"
+   },
+   {
+    "about": "Whether annual and quarterly company filings are served and can be found by search.",
+    "checks": 4,
+    "day": "2026-10-16",
+    "gates": {
+     "fail": 0,
+     "pass": 1
+    },
+    "rates": [
+     {
+      "day": "2026-10-13",
+      "rate": 100.0
+     },
+     {
+      "day": "2026-10-16",
+      "rate": 33.3
+     }
+    ],
+    "status": {
+     "error": 0,
+     "fail": 2,
+     "pass": 1,
+     "skip": 1,
+     "warn": 0
+    },
+    "suite": "periodic"
+   },
+   {
+    "about": "Whether search results are on topic for a fixed set of test queries, rare names and typos included.",
+    "checks": 55,
+    "day": "2026-10-19",
+    "gates": {
+     "fail": 0,
+     "pass": 3
+    },
+    "rates": [
+     {
+      "day": "2026-10-13",
+      "rate": 77.4
+     },
+     {
+      "day": "2026-10-16",
+      "rate": 77.4
+     },
+     {
+      "day": "2026-10-19",
+      "rate": 77.4
+     }
+    ],
+    "status": {
+     "error": 0,
+     "fail": 12,
+     "pass": 41,
+     "skip": 2,
+     "warn": 0
+    },
+    "suite": "search"
+   },
+   {
+    "about": "Whether historical series are complete and free of duplicates, gaps and impossible values.",
+    "checks": 81,
+    "day": "2026-10-16",
+    "gates": {
+     "fail": 0,
+     "pass": 11
+    },
+    "rates": [
+     {
+      "day": "2026-10-13",
+      "rate": 85.0
+     },
+     {
+      "day": "2026-10-16",
+      "rate": 90.0
+     }
+    ],
+    "status": {
+     "error": 0,
+     "fail": 8,
+     "pass": 72,
+     "skip": 1,
+     "warn": 0
+    },
+    "suite": "timeseries"
+   }
+  ]
+ },
+ "lake": {
+  "added": [
+   {
+    "categories": [
+     "Prices and market data",
+     "Financials",
+     "Filings",
+     "Earnings",
+     "Corporate actions",
+     "Ownership and insiders",
+     "Funds",
+     "Macro and rates",
+     "News and stories",
+     "Analysts",
+     "Companies and securities",
+     "Crypto",
+     "Search index"
+    ],
+    "month": "2026-10"
+   }
+  ],
+  "ai": {
+   "days": [
+    "2026-09-23",
+    "2026-09-24",
+    "2026-09-25",
+    "2026-09-26",
+    "2026-09-27",
+    "2026-09-28",
+    "2026-09-29",
+    "2026-09-30",
+    "2026-10-01",
+    "2026-10-02",
+    "2026-10-03",
+    "2026-10-04",
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-08",
+    "2026-10-09",
+    "2026-10-10",
+    "2026-10-11",
+    "2026-10-12",
+    "2026-10-13",
+    "2026-10-14",
+    "2026-10-15",
+    "2026-10-16",
+    "2026-10-17",
+    "2026-10-18",
+    "2026-10-19",
+    "2026-10-20"
+   ],
+   "not_metered": [
+    "company classification",
+    "search and judging evals",
+    "tokens of filing summaries, fact checks and earnings keywords",
+    "embedding tokens",
+    "company name embeddings (counted in their own table, not collected here yet)"
+   ],
+   "purposes": [
+    {
+     "cap": 10000,
+     "cap_pct": 30,
+     "kind": "LLM",
+     "peak_pct": 89,
+     "purpose": "Filing summaries",
+     "series": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      191,
+      89,
+      18327,
+      14410,
+      594,
+      468,
+      3874,
+      429,
+      357,
+      495,
+      4788,
+      2917,
+      32,
+      3273,
+      8897
+     ],
+     "tokens_in": null,
+     "tokens_out": null,
+     "trend": -46.0,
+     "week": 20759
+    },
+    {
+     "cap": 16000,
+     "cap_pct": 4,
+     "kind": "LLM",
+     "peak_pct": 14,
+     "purpose": "Summary fact checks",
+     "series": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      129,
+      11291,
+      8075,
+      370,
+      100,
+      2013,
+      214,
+      177,
+      248,
+      1068,
+      2265,
+      0,
+      273,
+      310
+     ],
+     "tokens_in": null,
+     "tokens_out": null,
+     "trend": -80.0,
+     "week": 4341
+    },
+    {
+     "cap": null,
+     "cap_pct": null,
+     "kind": "LLM",
+     "peak_pct": null,
+     "purpose": "Earnings call keywords and summaries",
+     "series": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      78,
+      8,
+      4,
+      7,
+      18,
+      10,
+      0,
+      0,
+      4292,
+      16,
+      10,
+      24,
+      27,
+      0,
+      2,
+      6,
+      52
+     ],
+     "tokens_in": null,
+     "tokens_out": null,
+     "trend": -97.0,
+     "week": 121
+    },
+    {
+     "cap": null,
+     "cap_pct": null,
+     "kind": "LLM",
+     "peak_pct": null,
+     "purpose": "Filing classification",
+     "series": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2399,
+      38,
+      172,
+      521,
+      4170,
+      151,
+      212,
+      126,
+      1568,
+      3242,
+      0,
+      103,
+      871
+     ],
+     "tokens_in": 12000000.0,
+     "tokens_out": 510000.0,
+     "trend": -18.0,
+     "week": 6122
+    },
+    {
+     "cap": 2000,
+     "cap_pct": 2,
+     "kind": "LLM",
+     "peak_pct": 4,
+     "purpose": "News-to-filing matching",
+     "series": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1001,
+      83,
+      1,
+      1,
+      50,
+      19,
+      9,
+      41,
+      14,
+      78,
+      14,
+      49
+     ],
+     "tokens_in": 210000.0,
+     "tokens_out": 4700.0,
+     "trend": -80.0,
+     "week": 224
+    },
+    {
+     "cap": 4000,
+     "cap_pct": 1,
+     "kind": "LLM",
+     "peak_pct": 6,
+     "purpose": "Earnings figure extraction",
+     "series": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3367,
+      310,
+      0,
+      0,
+      21,
+      18,
+      19,
+      248,
+      0,
+      0,
+      29,
+      66
+     ],
+     "tokens_in": 2300000.0,
+     "tokens_out": 690000.0,
+     "trend": -90.0,
+     "week": 380
+    },
+    {
+     "cap": 500,
+     "cap_pct": 43,
+     "kind": "LLM",
+     "peak_pct": 100,
+     "purpose": "Price move explanations",
+     "series": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      500,
+      500,
+      500,
+      312,
+      111,
+      37,
+      43,
+      0,
+      500
+     ],
+     "tokens_in": 1100000.0,
+     "tokens_out": 33000.0,
+     "trend": 50.0,
+     "week": 1503
+    },
+    {
+     "cap": 500,
+     "cap_pct": 124,
+     "kind": "LLM",
+     "peak_pct": 826,
+     "purpose": "Private funding round and valuation extraction",
+     "series": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4132,
+      149,
+      76
+     ],
+     "tokens_in": 8600000.0,
+     "tokens_out": 1600000.0,
+     "trend": null,
+     "week": 4357
+    },
+    {
+     "cap": 2000,
+     "cap_pct": 5,
+     "kind": "LLM",
+     "peak_pct": 32,
+     "purpose": "Shareholder vote results",
+     "series": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      646,
+      2,
+      6
+     ],
+     "tokens_in": 1900000.0,
+     "tokens_out": 860000.0,
+     "trend": null,
+     "week": 654
+    },
+    {
+     "cap": null,
+     "cap_pct": null,
+     "kind": "embedding model",
+     "peak_pct": null,
+     "purpose": "Filing summary embeddings",
+     "series": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      99,
+      48,
+      8979,
+      7353,
+      297,
+      234,
+      1937,
+      214,
+      178,
+      248,
+      2276,
+      915,
+      0,
+      273,
+      311
+     ],
+     "tokens_in": null,
+     "tokens_out": null,
+     "trend": -78.0,
+     "week": 4201
+    },
+    {
+     "cap": null,
+     "cap_pct": null,
+     "kind": "embedding model",
+     "peak_pct": null,
+     "purpose": "Earnings keyword embeddings",
+     "series": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1716,
+      134,
+      96,
+      154,
+      365,
+      205,
+      0,
+      0,
+      72265,
+      323,
+      221,
+      591,
+      608,
+      0,
+      41,
+      155,
+      1044
+     ],
+     "tokens_in": null,
+     "tokens_out": null,
+     "trend": -96.0,
+     "week": 2660
+    },
+    {
+     "cap": null,
+     "cap_pct": null,
+     "kind": "embedding model",
+     "peak_pct": null,
+     "purpose": "Search passage embeddings",
+     "series": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10741,
+      334186,
+      865201,
+      22486,
+      13555,
+      31570,
+      97916,
+      21071,
+      22673,
+      110306,
+      261821,
+      90222,
+      177131,
+      194935,
+      215400
+     ],
+     "tokens_in": null,
+     "tokens_out": null,
+     "trend": -23.0,
+     "week": 1072488
+    }
+   ]
+  },
+  "as_of": "2026-10-21",
+  "bytes": 13000000000.0,
+  "categories": [
+   {
+    "bytes": 3500000000.0,
+    "category": "Prices and market data",
+    "datasets": 14,
+    "earliest": "1986-01",
+    "rows": 180000000.0,
+    "rows_change": 43.0
+   },
+   {
+    "bytes": 3300000000.0,
+    "category": "Financials",
+    "datasets": 9,
+    "earliest": "1998-06",
+    "rows": 150000000.0,
+    "rows_change": 1000.0
+   },
+   {
+    "bytes": 260000000.0,
+    "category": "Filings",
+    "datasets": 11,
+    "earliest": null,
+    "rows": 1200000.0,
+    "rows_change": 270.0
+   },
+   {
+    "bytes": 420000000.0,
+    "category": "Earnings",
+    "datasets": 4,
+    "earliest": null,
+    "rows": 1300000.0,
+    "rows_change": -5.2
+   },
+   {
+    "bytes": 30000000.0,
+    "category": "Corporate actions",
+    "datasets": 2,
+    "earliest": null,
+    "rows": 1100000.0,
+    "rows_change": 3200.0
+   },
+   {
+    "bytes": 160000000.0,
+    "category": "Ownership and insiders",
+    "datasets": 9,
+    "earliest": null,
+    "rows": 5400000.0,
+    "rows_change": 8500.0
+   },
+   {
+    "bytes": 550000000.0,
+    "category": "Funds",
+    "datasets": 4,
+    "earliest": null,
+    "rows": 15000000.0,
+    "rows_change": null
+   },
+   {
+    "bytes": 4200000.0,
+    "category": "Macro and rates",
+    "datasets": 7,
+    "earliest": "1990-01",
+    "rows": 480000.0,
+    "rows_change": null
+   },
+   {
+    "bytes": 18000000.0,
+    "category": "News and stories",
+    "datasets": 5,
+    "earliest": null,
+    "rows": 170000.0,
+    "rows_change": 590.0
+   },
+   {
+    "bytes": 11000000.0,
+    "category": "Analysts",
+    "datasets": 4,
+    "earliest": null,
+    "rows": 310000.0,
+    "rows_change": 34.0
+   },
+   {
+    "bytes": 210000000.0,
+    "category": "Companies and securities",
+    "datasets": 11,
+    "earliest": null,
+    "rows": 840000.0,
+    "rows_change": 140.0
+   },
+   {
+    "bytes": 45000000.0,
+    "category": "Crypto",
+    "datasets": 4,
+    "earliest": "2013-04",
+    "rows": 1900000.0,
+    "rows_change": 0.44
+   },
+   {
+    "bytes": 4200000000.0,
+    "category": "Search index",
+    "datasets": 4,
+    "earliest": null,
+    "rows": 8800000.0,
+    "rows_change": 16.0
+   }
+  ],
+  "datasets": 88,
+  "lake_bytes": 790000000000.0,
+  "lake_series": [
+   {
+    "bytes": 270000000.0,
+    "day": "2026-10-02"
+   },
+   {
+    "bytes": 1700000000.0,
+    "day": "2026-10-03"
+   },
+   {
+    "bytes": 2500000000.0,
+    "day": "2026-10-04"
+   },
+   {
+    "bytes": 3300000000.0,
+    "day": "2026-10-05"
+   },
+   {
+    "bytes": 14000000000.0,
+    "day": "2026-10-06"
+   },
+   {
+    "bytes": 29000000000.0,
+    "day": "2026-10-07"
+   },
+   {
+    "bytes": 66000000000.0,
+    "day": "2026-10-08"
+   },
+   {
+    "bytes": 130000000000.0,
+    "day": "2026-10-09"
+   },
+   {
+    "bytes": 210000000000.0,
+    "day": "2026-10-10"
+   },
+   {
+    "bytes": 270000000000.0,
+    "day": "2026-10-11"
+   },
+   {
+    "bytes": 340000000000.0,
+    "day": "2026-10-12"
+   },
+   {
+    "bytes": 390000000000.0,
+    "day": "2026-10-13"
+   },
+   {
+    "bytes": 430000000000.0,
+    "day": "2026-10-14"
+   },
+   {
+    "bytes": 480000000000.0,
+    "day": "2026-10-15"
+   },
+   {
+    "bytes": 510000000000.0,
+    "day": "2026-10-16"
+   },
+   {
+    "bytes": 560000000000.0,
+    "day": "2026-10-17"
+   },
+   {
+    "bytes": 630000000000.0,
+    "day": "2026-10-18"
+   },
+   {
+    "bytes": 720000000000.0,
+    "day": "2026-10-19"
+   },
+   {
+    "bytes": 790000000000.0,
+    "day": "2026-10-20"
+   }
+  ],
+  "rows": 360000000.0,
+  "rows_base": "2026-10-12",
+  "rows_series": [
+   {
+    "day": "2026-10-05",
+    "rows": 5000000.0
+   },
+   {
+    "day": "2026-10-06",
+    "rows": 21000000.0
+   },
+   {
+    "day": "2026-10-07",
+    "rows": 140000000.0
+   },
+   {
+    "day": "2026-10-08",
+    "rows": 140000000.0
+   },
+   {
+    "day": "2026-10-09",
+    "rows": 140000000.0
+   },
+   {
+    "day": "2026-10-10",
+    "rows": 140000000.0
+   },
+   {
+    "day": "2026-10-11",
+    "rows": 150000000.0
+   },
+   {
+    "day": "2026-10-12",
+    "rows": 150000000.0
+   },
+   {
+    "day": "2026-10-14",
+    "rows": 230000000.0
+   },
+   {
+    "day": "2026-10-15",
+    "rows": 360000000.0
+   },
+   {
+    "day": "2026-10-16",
+    "rows": 370000000.0
+   },
+   {
+    "day": "2026-10-17",
+    "rows": 370000000.0
+   },
+   {
+    "day": "2026-10-18",
+    "rows": 370000000.0
+   },
+   {
+    "day": "2026-10-19",
+    "rows": 360000000.0
+   },
+   {
+    "day": "2026-10-20",
+    "rows": 360000000.0
+   }
+  ],
+  "served_series": [
+   {
+    "bytes": 12000000000.0,
+    "day": "2026-10-20"
+   },
+   {
+    "bytes": 13000000000.0,
+    "day": "2026-10-21"
+   }
+  ]
+ },
+ "private": {
+  "as_of": "2026-10-21",
+  "coming": [
+   {
+    "item": "Funding rounds from SEC Form D, fund marks, news and company newsrooms",
+    "status": "in progress",
+    "tested": "about 236,000 funding rounds and 1.4 million round statements; 644 secondary-market offerings across 25 companies"
+   },
+   {
+    "item": "Round reports, each marked announced or in talks, with reported valuations",
+    "status": "in progress",
+    "tested": "145 round reports from news and newsrooms, 71 with a reported valuation"
+   },
+   {
+    "item": "Federal contract awards (USAspending)",
+    "status": "in progress",
+    "tested": "about 4,300 awards"
+   },
+   {
+    "item": "US state business registries and GLEIF company identifiers",
+    "status": "planned",
+    "tested": null
+   },
+   {
+    "item": "SEC investment adviser filings",
+    "status": "planned",
+    "tested": null
+   },
+   {
+    "item": "Hiring signals (H-1B and Department of Labor filings)",
+    "status": "planned",
+    "tested": null
+   },
+   {
+    "item": "Patents and trademarks (USPTO)",
+    "status": "planned",
+    "tested": null
+   },
+   {
+    "item": "Operating footprint (FAA, FMCSA, EPA, FCC)",
+    "status": "planned",
+    "tested": null
+   },
+   {
+    "item": "Deal and risk events (FTC early terminations, SAM exclusions)",
+    "status": "planned",
+    "tested": null
+   }
+  ],
+  "companies": 3600.0,
+  "examples": [
+   {
+    "funds": 116,
+    "name": "Anthropic",
+    "rounds": "7 rounds from its newsroom"
+   },
+   {
+    "funds": 79,
+    "name": "OpenAI",
+    "rounds": "4 round reports: 2 from its newsroom, 2 from news (1 in talks)"
+   },
+   {
+    "funds": 21,
+    "name": "SpaceX",
+    "rounds": null
+   },
+   {
+    "funds": 69,
+    "name": "Anduril",
+    "rounds": null
+   }
+  ],
+  "funds": 1400.0,
+  "issuers": 370000.0,
+  "offerings": 780000.0,
+  "positions": 13000.0,
+  "since": "2026-07"
+ },
+ "roadmap": {
+  "as_of": "2026-10",
+  "categories": [
+   "Market data",
+   "Company filings",
+   "Earnings and transcripts",
+   "Corporate actions",
+   "Ownership and insiders",
+   "Funds and ETFs",
+   "Rates and economy",
+   "Analyst and news signals",
+   "Reference data",
+   "Other"
+  ],
+  "datasets": [
+   {
+    "category": "Rates and economy",
+    "name": "Interest rates and yield curves",
+    "status": "done"
+   },
+   {
+    "category": "Corporate actions",
+    "name": "Stock splits and dividends",
+    "status": "done"
+   },
+   {
+    "category": "Company filings",
+    "name": "Reported financials and shares outstanding",
+    "status": "done"
+   },
+   {
+    "category": "Funds and ETFs",
+    "name": "ETF holdings and revenue segments",
+    "status": "done"
+   },
+   {
+    "category": "Rates and economy",
+    "name": "Foreign exchange reference rates",
+    "status": "done"
+   },
+   {
+    "category": "Market data",
+    "name": "Exchange trading sessions",
+    "status": "done"
+   },
+   {
+    "category": "Analyst and news signals",
+    "name": "Analyst estimates, ratings and price targets",
+    "status": "done"
+   },
+   {
+    "category": "Analyst and news signals",
+    "name": "Daily news signals",
+    "status": "done"
+   },
+   {
+    "category": "Analyst and news signals",
+    "name": "Explanations for big price moves",
+    "status": "done"
+   },
+   {
+    "category": "Market data",
+    "name": "Risk metrics and technical indicators",
+    "status": "done"
+   },
+   {
+    "category": "Ownership and insiders",
+    "name": "Initial insider holdings",
+    "status": "done"
+   },
+   {
+    "category": "Ownership and insiders",
+    "name": "Institutional investment managers",
+    "status": "done"
+   },
+   {
+    "category": "Company filings",
+    "name": "Material company events from current reports",
+    "status": "done"
+   },
+   {
+    "category": "Earnings and transcripts",
+    "name": "Earnings call keywords",
+    "status": "done"
+   },
+   {
+    "category": "Other",
+    "name": "All products read from the new platform",
+    "status": "done"
+   },
+   {
+    "category": "Market data",
+    "name": "Daily stock prices with history",
+    "status": "done"
+   },
+   {
+    "category": "Reference data",
+    "name": "Company and listing register, including delisted",
+    "status": "done"
+   },
+   {
+    "category": "Reference data",
+    "name": "Global security identifiers",
+    "status": "done"
+   },
+   {
+    "category": "Ownership and insiders",
+    "name": "Insider sales and private offering notices",
+    "status": "done"
+   },
+   {
+    "category": "Ownership and insiders",
+    "name": "Institutional holdings by ticker",
+    "status": "done"
+   },
+   {
+    "category": "Rates and economy",
+    "name": "Economic indicators and release calendar",
+    "status": "done"
+   },
+   {
+    "category": "Funds and ETFs",
+    "name": "Mutual fund profiles, holdings and fees",
+    "status": "done"
+   },
+   {
+    "category": "Rates and economy",
+    "name": "Bond auctions, savings, bank, mortgage and money market rates",
+    "status": "done"
+   },
+   {
+    "category": "Market data",
+    "name": "Commodity prices, valuation ratios, index members and total return",
+    "status": "done"
+   },
+   {
+    "category": "Market data",
+    "name": "Free-float estimates",
+    "status": "done"
+   },
+   {
+    "category": "Company filings",
+    "name": "Debt, delisting and equity sale events",
+    "status": "done"
+   },
+   {
+    "category": "Company filings",
+    "name": "Material company event history",
+    "status": "in progress"
+   },
+   {
+    "category": "Earnings and transcripts",
+    "name": "Earnings call transcripts and guidance",
+    "status": "in progress"
+   },
+   {
+    "category": "Corporate actions",
+    "name": "Dividend and split announcements",
+    "status": "done"
+   },
+   {
+    "category": "Company filings",
+    "name": "Regulatory, clinical trial and competition events",
+    "status": "in progress"
+   },
+   {
+    "category": "Company filings",
+    "name": "Securities offering terms and say-on-pay votes",
+    "status": "in progress"
+   },
+   {
+    "category": "Ownership and insiders",
+    "name": "Private fund exposure",
+    "status": "in progress"
+   },
+   {
+    "category": "Company filings",
+    "name": "Annual and quarterly report text",
+    "status": "in progress"
+   },
+   {
+    "category": "Funds and ETFs",
+    "name": "Fund distributions and return of capital",
+    "status": "in progress"
+   },
+   {
+    "category": "Market data",
+    "name": "Short interest",
+    "status": "in progress"
+   },
+   {
+    "category": "Ownership and insiders",
+    "name": "Congressional stock trades",
+    "status": "in progress"
+   },
+   {
+    "category": "Reference data",
+    "name": "Company logos",
+    "status": "in progress"
+   }
+  ],
+  "phases": [
+   {
+    "month": "2026-09",
+    "name": "Foundation and prototypes",
+    "status": "done"
+   },
+   {
+    "month": "2026-10",
+    "name": "Cloud infrastructure",
+    "status": "done"
+   },
+   {
+    "month": null,
+    "name": "Data history and audit trail",
+    "status": "done"
+   },
+   {
+    "month": null,
+    "name": "First pipelines and serving copy",
+    "status": "done"
+   },
+   {
+    "month": null,
+    "name": "Faster intraday refresh",
+    "status": "done"
+   },
+   {
+    "month": null,
+    "name": "Native data collection",
+    "status": "done"
+   },
+   {
+    "month": null,
+    "name": "Data quality checks",
+    "status": "done"
+   },
+   {
+    "month": null,
+    "name": "Automated operations agent",
+    "status": "in progress"
+   },
+   {
+    "month": null,
+    "name": "Moving products off the old platform",
+    "status": "in progress"
+   },
+   {
+    "month": null,
+    "name": "Dataset coverage program",
+    "status": "in progress"
+   }
+  ],
+  "universe": [
+   {
+    "month": null,
+    "name": "Better company matching in news and filings",
+    "status": "in progress"
+   },
+   {
+    "month": null,
+    "name": "Own company record for US listings",
+    "status": "planned"
+   },
+   {
+    "month": null,
+    "name": "Apps move to the new company record",
+    "status": "planned"
+   },
+   {
+    "month": null,
+    "name": "Global company identity coverage",
+    "status": "planned"
+   },
+   {
+    "month": null,
+    "name": "Foreign listings linked to their home company",
+    "status": "planned"
+   },
+   {
+    "month": null,
+    "name": "Exchange coverage beyond the US",
+    "status": "planned"
+   },
+   {
+    "month": null,
+    "name": "Finks sector and industry classification",
+    "status": "planned"
+   },
+   {
+    "month": null,
+    "name": "Private company funding rounds from filings",
+    "status": "in progress"
+   },
+   {
+    "month": null,
+    "name": "Private company funding rounds and valuations from news",
+    "status": "in progress"
+   },
+   {
+    "month": null,
+    "name": "Private company valuations",
+    "status": "in progress"
+   }
+  ],
+  "universe_name": "Company records and private-company data"
+ },
+ "version": 1
+}
