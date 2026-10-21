@@ -100,7 +100,7 @@ def test_sizes_and_tokens_only_on_the_lake_page(tmp_path, planted, rule):
 @pytest.mark.parametrize(
     ("old", "new"),
     [
-        ("</style>", "/* ck_dev */</style>"),  # CSS comment
+        ("</style>", "/* note */</style>"),  # CSS comment
         ("</style>", ".x::after{content:'secret'}</style>"),
         ("</style>", ".x{color:#111}.y{background:url(x)}</style>"),
     ],

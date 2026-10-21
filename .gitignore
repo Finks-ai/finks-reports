@@ -1,3 +1,4 @@
 _site/
 /model.json
 __pycache__/
+.pytest_cache/
