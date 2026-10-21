@@ -356,7 +356,7 @@
   "settle_days": 2
  },
  "eval": {
-  "as_of": "2026-10-19",
+  "as_of": "2026-10-21",
   "suites": [
    {
     "about": "Whether common factual questions get answers that match an independent reference source.",
@@ -384,6 +384,29 @@
      "warn": 14
     },
     "suite": "answerability"
+   },
+   {
+    "about": "Whether the data service returns the documented values, errors and pages for a fixed set of requests.",
+    "checks": 55,
+    "day": "2026-10-21",
+    "gates": {
+     "fail": 0,
+     "pass": 0
+    },
+    "rates": [
+     {
+      "day": "2026-10-21",
+      "rate": 96.4
+     }
+    ],
+    "status": {
+     "error": 0,
+     "fail": 0,
+     "pass": 53,
+     "skip": 0,
+     "warn": 2
+    },
+    "suite": "api"
    },
    {
     "about": "Whether served data agrees with itself and with independent public sources.",
@@ -1242,7 +1265,7 @@
     "rows_change": 0.44
    },
    {
-    "bytes": 4200000000.0,
+    "bytes": 4300000000.0,
     "category": "Search index",
     "datasets": 4,
     "earliest": null,
@@ -1251,7 +1274,7 @@
    }
   ],
   "datasets": 88,
-  "lake_bytes": 790000000000.0,
+  "lake_bytes": 830000000000.0,
   "lake_series": [
    {
     "bytes": 270000000.0,
@@ -1328,6 +1351,10 @@
    {
     "bytes": 790000000000.0,
     "day": "2026-10-20"
+   },
+   {
+    "bytes": 830000000000.0,
+    "day": "2026-10-21"
    }
   ],
   "rows": 360000000.0,
@@ -1656,7 +1683,7 @@
    {
     "category": "Ownership and insiders",
     "name": "Private fund exposure",
-    "status": "in progress"
+    "status": "done"
    },
    {
     "category": "Company filings",
@@ -1755,7 +1782,7 @@
    {
     "month": null,
     "name": "Global company identity coverage",
-    "status": "planned"
+    "status": "in progress"
    },
    {
     "month": null,
@@ -1783,9 +1810,9 @@
     "status": "in progress"
    },
    {
-    "month": null,
+    "month": "2026-10",
     "name": "Private company valuations",
-    "status": "in progress"
+    "status": "done"
    }
   ],
   "universe_name": "Company records and private-company data"
