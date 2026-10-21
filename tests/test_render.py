@@ -170,3 +170,15 @@ def test_write_refuses_to_replace_a_foreign_dir(tmp_path):
     with pytest.raises(SystemExit):
         render.write(render.site(model()), tmp_path)
     assert (tmp_path / "notes.txt").exists()
+
+
+@pytest.mark.parametrize(
+    "injected",
+    ['<script>alert(1)</script>', '<img src="x">', '</span><a href="https://example.com/">x</a>', "a@b"],
+)
+def test_markup_in_a_model_string_is_refused(tmp_path, injected):
+    m = model()
+    m["roadmap"]["phases"][0]["name"] = injected  # model strings reach text nodes only; the scan gates the rest
+    with pytest.raises(scan.Leak):
+        render.write(render.site(m), tmp_path / "site")
+    assert not (tmp_path / "site").exists()

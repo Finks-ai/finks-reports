@@ -3,9 +3,10 @@
     python render.py --model model.json --out _site
 
 The model is built and allowlist-checked in finks-lakehouse, exported to the `data` branch here as
-`data/model.json`, and is the only input: model JSON in, static HTML out. Nothing else is read, and every
-name on a page is either a constant in this file or a date. `site` returns the six HTML files; `write`
-renders, then runs scan.py over what was written (a finding deletes the output).
+`data/model.json`, and is the only input: model JSON in, static HTML out. Nothing else is read. Model strings come
+from finks-lakehouse's closed allowlists and are only ever placed in text nodes, never in attribute values (every
+dynamic attribute is a number or a constant); scan.py is the tag and attribute gate. `site` returns the six HTML
+files; `write` renders, then runs scan.py over what was written (a finding deletes the output).
 """
 
 import argparse

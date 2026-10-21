@@ -18,8 +18,10 @@ Pages from `main`:
 
 ## Contributing
 
-- A new page or section means editing `render.py` and its tests, then updating `tests/expected` with the new
-  byte-identical output. Run `pytest -q` to regenerate and check.
+- A new page or section means editing `render.py` and its tests, then updating `tests/expected` with the new output:
+  `python render.py --model tests/model.json --out /tmp/out && cp -R /tmp/out/. tests/expected/`, review the diff,
+  then `pytest -q`. Model strings may only ever reach text nodes, never attribute values; the scan is the tag and
+  attribute gate.
 - New data (a new category, suite, status, or any string that appears on a page) is not added here: it needs a
   finks-lakehouse pull request that extends the model and its allowlist, since finks-lakehouse owns the allowlist.
 - Every pull request must pass the `render` check.
