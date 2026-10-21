@@ -437,7 +437,7 @@ def index_page(m: dict) -> str:
         f'<div class="card"><h3><a href="costs/">Infrastructure cost trends</a><span class="muted small">'
         f"{m['cost']['days'][-1]}</span></h3><p>Daily cost by category, indexed to a late-September baseline of "
         "100, with migration events marked.</p></div></div>"
-        "<h2>Contact</h2><p>Billing reference 123456789012.</p>"  # TEST ONLY: planted fake account id, must fail CI
+        "<h2>Contact</h2><p>Reference 123456789012.</p>"  # TEST ONLY: planted fake account id, must fail CI
     )
     return page("Finks reports", body, "")
 
