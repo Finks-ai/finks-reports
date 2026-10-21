@@ -21,11 +21,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: fetch the published model (data branch)
+        run: |
+          git fetch --depth=1 origin data:refs/remotes/origin/data
+          git show origin/data:data/model.json > model.json
+      - name: render and leak-scan the site
+        run: python render.py --model model.json --out _site
       - run: pip install pytest
       - run: pytest -q
-      - run: git fetch --depth=1 origin data:refs/remotes/origin/data
-      - run: git show origin/data:data/model.json > model.json
-      - run: python render.py --model model.json --out _site
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
