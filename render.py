@@ -401,7 +401,7 @@ def private_page(m: dict) -> str:
         "<div class=card><div class=muted>Private holdings in registered fund portfolios</div>"
         f'<div class=chg>{n(m["companies"])}</div><div class="small muted">distinct holding names: {n(m["positions"])} '
         f"positions in {n(m['funds'])} funds, from SEC N-PORT reports filed since {month(m['since'])}</div></div>",
-        "</div><h2>Coming</h2><table><tr><th>Data</th><th>Status</th><th>Measured in testing</th></tr>",
+        "</div><h2>Sources and status</h2><table><tr><th>Data</th><th>Status</th><th>Measured in testing</th></tr>",
         *(
             f"<tr><td>{c['item']}</td><td>{chip(c['status'])}</td><td>{c['tested'] or '-'}</td></tr>"
             for c in m["coming"]
