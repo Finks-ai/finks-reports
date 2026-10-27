@@ -353,7 +353,19 @@
    "2026-10-12",
    "2026-10-18"
   ],
-  "settle_days": 2
+  "settle_days": 2,
+  "overspending": [
+   {
+    "title": "Three egress gateways where one would do",
+    "what": "One internal service runs a separate egress gateway per environment, each with very little traffic.",
+    "proposal": "Route the smaller environments through one gateway.",
+    "effect": "About two-thirds less egress cost for that service.",
+    "found": "2026-10-27",
+    "area": "ClickHouse",
+    "status": "proposed",
+    "resolved": null
+   }
+  ]
  },
  "eval": {
   "as_of": "2026-10-19",

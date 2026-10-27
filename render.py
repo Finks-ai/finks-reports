@@ -205,7 +205,29 @@ def costs_page(m: dict) -> str:
         "compute (containers and functions), storage (object storage), audit logging (cloud audit trail), CI (build and test runs), network (outbound internet gateways), encryption (key management requests). "
         f"The newest {m['settle_days']} days are left out until the providers settle them.</p>"
     )
+    h.append(overspending(m.get("overspending", [])))
     return page(f"Finks infrastructure cost trends {days[-1]}", "\n".join(h), "../")
+
+
+def overspending(entries: list[dict]) -> str:
+    """Overspending reports: findings in the cost series, what is proposed, and where each stands."""
+    h = [
+        "<h2>Overspending reports</h2><p>Cost we found we could avoid, from the series above: what it is, what we "
+        "propose, the expected effect (relative only) and where it stands.</p>"
+    ]
+    if not entries:
+        return h[0] + "<p class=muted>None open.</p>"
+    h.append(
+        "<table><tr><th>Found</th><th>Area</th><th>Finding</th><th>Proposal</th><th>Expected effect</th>"
+        "<th>Status</th><th>Resolved</th></tr>"
+    )
+    h += [
+        f"<tr><td>{e['found']}</td><td>{e['area']}</td><td><b>{e['title']}</b> {e['what']}</td>"
+        f"<td>{e['proposal']}</td><td>{e['effect']}</td><td>{e['status']}</td><td>{e['resolved'] or '-'}</td></tr>"
+        for e in entries
+    ]
+    h.append("</table>")
+    return "".join(h)
 
 
 CLS = {"done": "done", "in progress": "prog", "planned": "plan"}
