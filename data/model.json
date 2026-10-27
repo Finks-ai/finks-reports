@@ -10,13 +10,17 @@
    "compute",
    "storage",
    "audit logging",
-   "CI"
+   "CI",
+   "network",
+   "encryption"
   ],
   "change": {
    "CI": 183,
    "ClickHouse": -75,
    "audit logging": null,
    "compute": 5,
+   "encryption": 1944,
+   "network": null,
    "orchestration": -89,
    "storage": 966
   },
@@ -327,6 +331,118 @@
     104.3,
     111.8
    ],
+   "encryption": [
+    46.6,
+    55.3,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    93.1,
+    108.6,
+    116.4,
+    116.4,
+    146.6,
+    180.5,
+    185.7,
+    276.1,
+    381.8,
+    523.6,
+    814.3,
+    1251.2,
+    1458.4,
+    1280.2,
+    1264.5,
+    1033.3,
+    1075.8,
+    1159.1,
+    1111.2,
+    1342.5,
+    1571.5,
+    2092.3,
+    1719.7,
+    1812.2,
+    1905.0,
+    1972.8,
+    2377.4,
+    2428.3
+   ],
+   "network": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    31.2,
+    36.8,
+    39.7,
+    46.9,
+    58.7,
+    61.1,
+    49.1,
+    58.0,
+    65.4,
+    59.0,
+    60.2,
+    67.4,
+    98.4,
+    88.2,
+    93.2,
+    87.5,
+    88.2,
+    98.8,
+    98.7,
+    88.1,
+    98.1,
+    103.9,
+    102.4,
+    110.1
+   ],
    "orchestration": [
     35.1,
     25.6,
@@ -441,7 +557,8 @@
    ]
   },
   "new": [
-   "audit logging"
+   "audit logging",
+   "network"
   ],
   "now": [
    "2026-10-18",
@@ -450,7 +567,7 @@
   "settle_days": 2
  },
  "eval": {
-  "as_of": "2026-10-22",
+  "as_of": "2026-10-26",
   "suites": [
    {
     "about": "Whether common factual questions get answers that match an independent reference source.",
@@ -623,6 +740,29 @@
     "suite": "fringe"
    },
    {
+    "about": "Whether securities offering and proxy terms match hand-checked filings, and recent listings are covered.",
+    "checks": 22,
+    "day": "2026-10-26",
+    "gates": {
+     "fail": 0,
+     "pass": 5
+    },
+    "rates": [
+     {
+      "day": "2026-10-26",
+      "rate": 100.0
+     }
+    ],
+    "status": {
+     "error": 0,
+     "fail": 0,
+     "pass": 21,
+     "skip": 1,
+     "warn": 0
+    },
+    "suite": "offerings"
+   },
+   {
     "about": "Whether annual and quarterly company filings are served and can be found by search.",
     "checks": 4,
     "day": "2026-10-16",
@@ -726,14 +866,14 @@
      "Companies and securities",
      "Crypto",
      "Search index",
-     "Private companies"
+     "Private companies",
+     "Regulatory and government"
     ],
     "month": "2026-10"
    }
   ],
   "ai": {
    "days": [
-    "2026-09-28",
     "2026-09-29",
     "2026-09-30",
     "2026-10-01",
@@ -760,7 +900,8 @@
     "2026-10-22",
     "2026-10-23",
     "2026-10-24",
-    "2026-10-25"
+    "2026-10-25",
+    "2026-10-26"
    ],
    "not_metered": [
     "company classification",
@@ -772,12 +913,11 @@
    "purposes": [
     {
      "cap": 10000,
-     "cap_pct": 70,
+     "cap_pct": 67,
      "kind": "LLM",
      "peak_pct": 100,
      "purpose": "Filing summaries",
      "series": [
-      0,
       0,
       0,
       0,
@@ -804,12 +944,13 @@
       9973,
       8318,
       8964,
-      1138
+      1138,
+      941
      ],
      "tokens_in": null,
      "tokens_out": null,
      "trend": 280.0,
-     "week": 49152
+     "week": 46820
     },
     {
      "cap": 16000,
@@ -818,7 +959,6 @@
      "peak_pct": 3,
      "purpose": "Summary fact checks",
      "series": [
-      0,
       0,
       0,
       0,
@@ -845,12 +985,13 @@
       496,
       549,
       2,
-      0
+      0,
+      468
      ],
      "tokens_in": null,
      "tokens_out": null,
-     "trend": -66.0,
-     "week": 2024
+     "trend": -48.0,
+     "week": 2219
     },
     {
      "cap": null,
@@ -859,7 +1000,6 @@
      "peak_pct": null,
      "purpose": "Earnings call keywords and summaries",
      "series": [
-      0,
       0,
       0,
       0,
@@ -886,12 +1026,13 @@
       166,
       105,
       4,
-      2
+      2,
+      39
      ],
      "tokens_in": null,
      "tokens_out": null,
-     "trend": -90.0,
-     "week": 419
+     "trend": 430.0,
+     "week": 452
     },
     {
      "cap": null,
@@ -900,7 +1041,6 @@
      "peak_pct": null,
      "purpose": "Filing classification",
      "series": [
-      0,
       0,
       0,
       0,
@@ -927,12 +1067,13 @@
       95,
       110,
       134,
-      0
+      0,
+      95
      ],
-     "tokens_in": 6600000.0,
+     "tokens_in": 6500000.0,
      "tokens_out": 270000.0,
-     "trend": -64.0,
-     "week": 3431
+     "trend": -37.0,
+     "week": 3423
     },
     {
      "cap": 2000,
@@ -941,7 +1082,6 @@
      "peak_pct": 7,
      "purpose": "News-to-filing matching",
      "series": [
-      0,
       0,
       0,
       0,
@@ -968,12 +1108,13 @@
       77,
       147,
       24,
-      4
+      4,
+      27
      ],
-     "tokens_in": 380000.0,
-     "tokens_out": 8000.0,
-     "trend": 79.0,
-     "week": 379
+     "tokens_in": 400000.0,
+     "tokens_out": 8200.0,
+     "trend": 74.0,
+     "week": 392
     },
     {
      "cap": 4000,
@@ -982,7 +1123,6 @@
      "peak_pct": 3,
      "purpose": "Earnings figure extraction",
      "series": [
-      0,
       0,
       0,
       0,
@@ -1009,21 +1149,21 @@
       126,
       34,
       0,
-      2
+      2,
+      62
      ],
-     "tokens_in": 2300000.0,
-     "tokens_out": 740000.0,
+     "tokens_in": 2500000.0,
+     "tokens_out": 820000.0,
      "trend": 17.0,
-     "week": 358
+     "week": 391
     },
     {
      "cap": 500,
-     "cap_pct": 86,
+     "cap_pct": 96,
      "kind": "LLM",
      "peak_pct": 100,
      "purpose": "Price move explanations",
      "series": [
-      0,
       0,
       0,
       0,
@@ -1050,21 +1190,21 @@
       500,
       500,
       500,
-      500
+      500,
+      363
      ],
-     "tokens_in": 2200000.0,
-     "tokens_out": 66000.0,
-     "trend": 50.0,
-     "week": 3000
+     "tokens_in": 2500000.0,
+     "tokens_out": 74000.0,
+     "trend": 120.0,
+     "week": 3363
     },
     {
      "cap": 564,
-     "cap_pct": 74,
+     "cap_pct": 73,
      "kind": "LLM",
      "peak_pct": 376,
      "purpose": "Private funding round and valuation extraction",
      "series": [
-      0,
       0,
       0,
       0,
@@ -1091,12 +1231,13 @@
       2122,
       184,
       64,
-      72
+      72,
+      117
      ],
-     "tokens_in": 6100000.0,
+     "tokens_in": 6000000.0,
      "tokens_out": 1200000.0,
-     "trend": -29.0,
-     "week": 2916
+     "trend": -33.0,
+     "week": 2884
     },
     {
      "cap": 500,
@@ -1128,11 +1269,11 @@
       0,
       0,
       0,
-      0,
       196,
       5000,
       5000,
-      2339
+      2339,
+      0
      ],
      "tokens_in": 78000000.0,
      "tokens_out": 20000000.0,
@@ -1141,7 +1282,7 @@
     },
     {
      "cap": 2500,
-     "cap_pct": 12,
+     "cap_pct": 18,
      "kind": "LLM",
      "peak_pct": 80,
      "purpose": "Fund distribution notice extraction",
@@ -1169,16 +1310,16 @@
       0,
       0,
       0,
-      0,
       1996,
       70,
       0,
-      70
+      70,
+      1071
      ],
-     "tokens_in": 14000000.0,
-     "tokens_out": 4600000.0,
+     "tokens_in": 21000000.0,
+     "tokens_out": 8300000.0,
      "trend": null,
-     "week": 2136
+     "week": 3207
     },
     {
      "cap": 2000,
@@ -1206,7 +1347,6 @@
       0,
       0,
       0,
-      0,
       646,
       2,
       6,
@@ -1214,12 +1354,13 @@
       4,
       5,
       11,
-      0
+      0,
+      4
      ],
-     "tokens_in": 92000.0,
-     "tokens_out": 39000.0,
+     "tokens_in": 89000.0,
+     "tokens_out": 36000.0,
      "trend": -95.0,
-     "week": 32
+     "week": 34
     },
     {
      "cap": null,
@@ -1228,7 +1369,6 @@
      "peak_pct": null,
      "purpose": "Filing summary embeddings",
      "series": [
-      0,
       0,
       0,
       0,
@@ -1255,12 +1395,13 @@
       497,
       549,
       2,
-      0
+      0,
+      467
      ],
      "tokens_in": null,
      "tokens_out": null,
-     "trend": -65.0,
-     "week": 2026
+     "trend": -46.0,
+     "week": 2220
     },
     {
      "cap": null,
@@ -1269,7 +1410,6 @@
      "peak_pct": null,
      "purpose": "Earnings keyword embeddings",
      "series": [
-      0,
       0,
       0,
       0,
@@ -1296,12 +1436,13 @@
       2982,
       1814,
       62,
-      47
+      47,
+      716
      ],
      "tokens_in": null,
      "tokens_out": null,
-     "trend": -90.0,
-     "week": 7741
+     "trend": 330.0,
+     "week": 8302
     },
     {
      "cap": null,
@@ -1310,7 +1451,6 @@
      "peak_pct": null,
      "purpose": "Search passage embeddings",
      "series": [
-      0,
       0,
       0,
       0,
@@ -1337,16 +1477,17 @@
       127939,
       125090,
       907161,
-      425985
+      425985,
+      276897
      ],
      "tokens_in": null,
      "tokens_out": null,
-     "trend": 190.0,
-     "week": 2256714
+     "trend": 170.0,
+     "week": 2338676
     }
    ]
   },
-  "as_of": "2026-10-26",
+  "as_of": "2026-10-27",
   "bytes": 13000000000.0,
   "categories": [
    {
@@ -1355,7 +1496,7 @@
     "datasets": 15,
     "earliest": "1986-01",
     "rows": 180000000.0,
-    "rows_change": -1.3
+    "rows_change": 2.0
    },
    {
     "bytes": 3300000000.0,
@@ -1366,11 +1507,11 @@
     "rows_change": 0.057
    },
    {
-    "bytes": 330000000.0,
+    "bytes": 340000000.0,
     "category": "Filings",
     "datasets": 13,
     "earliest": null,
-    "rows": 1200000.0,
+    "rows": 1300000.0,
     "rows_change": 4.8
    },
    {
@@ -1379,39 +1520,39 @@
     "datasets": 4,
     "earliest": null,
     "rows": 1300000.0,
-    "rows_change": -0.12
+    "rows_change": -0.18
    },
    {
     "bytes": 30000000.0,
     "category": "Corporate actions",
-    "datasets": 2,
+    "datasets": 3,
     "earliest": null,
     "rows": 1100000.0,
-    "rows_change": 0.089
+    "rows_change": 0.085
    },
    {
     "bytes": 170000000.0,
     "category": "Ownership and insiders",
     "datasets": 9,
     "earliest": null,
-    "rows": 5600000.0,
-    "rows_change": 4.8
+    "rows": 5700000.0,
+    "rows_change": 4.9
    },
    {
     "bytes": 550000000.0,
     "category": "Funds",
-    "datasets": 5,
+    "datasets": 6,
     "earliest": null,
     "rows": 15000000.0,
-    "rows_change": 0.21
+    "rows_change": 0.25
    },
    {
-    "bytes": 4200000.0,
+    "bytes": 4500000.0,
     "category": "Macro and rates",
-    "datasets": 7,
+    "datasets": 8,
     "earliest": "1990-01",
-    "rows": 480000.0,
-    "rows_change": 0.069
+    "rows": 570000.0,
+    "rows_change": 18.0
    },
    {
     "bytes": 19000000.0,
@@ -1419,7 +1560,7 @@
     "datasets": 5,
     "earliest": null,
     "rows": 170000.0,
-    "rows_change": 6.2
+    "rows_change": 6.0
    },
    {
     "bytes": 11000000.0,
@@ -1446,23 +1587,31 @@
     "rows_change": 0.26
    },
    {
-    "bytes": 4400000000.0,
+    "bytes": 3500000000.0,
     "category": "Search index",
     "datasets": 4,
     "earliest": null,
-    "rows": 9400000.0,
+    "rows": 9300000.0,
     "rows_change": 12.0
    },
    {
     "bytes": 120000000.0,
     "category": "Private companies",
-    "datasets": 4,
+    "datasets": 5,
     "earliest": null,
     "rows": 1800000.0,
     "rows_change": null
+   },
+   {
+    "bytes": 30000000.0,
+    "category": "Regulatory and government",
+    "datasets": 6,
+    "earliest": "2026-09",
+    "rows": 660000.0,
+    "rows_change": null
    }
   ],
-  "datasets": 97,
+  "datasets": 107,
   "lake_bytes": 1100000000000.0,
   "lake_series": [
    {
@@ -1560,10 +1709,14 @@
    {
     "bytes": 1100000000000.0,
     "day": "2026-10-25"
+   },
+   {
+    "bytes": 1100000000000.0,
+    "day": "2026-10-26"
    }
   ],
   "rows": 370000000.0,
-  "rows_base": "2026-10-18",
+  "rows_base": "2026-10-19",
   "rows_series": [
    {
     "day": "2026-10-05",
@@ -1644,6 +1797,10 @@
    {
     "day": "2026-10-25",
     "rows": 370000000.0
+   },
+   {
+    "day": "2026-10-26",
+    "rows": 370000000.0
    }
   ],
   "served_series": [
@@ -1658,11 +1815,15 @@
    {
     "bytes": 13000000000.0,
     "day": "2026-10-26"
+   },
+   {
+    "bytes": 13000000000.0,
+    "day": "2026-10-27"
    }
   ]
  },
  "private": {
-  "as_of": "2026-10-26",
+  "as_of": "2026-10-27",
   "coming": [
    {
     "item": "Funding rounds from SEC Form D, fund marks, news and company newsrooms",
