@@ -202,7 +202,7 @@ def costs_page(m: dict) -> str:
         )
     h.append(
         '<p class="small muted">Categories: ClickHouse (analytics database), orchestration (pipeline scheduler usage), '
-        "compute (containers and functions), storage (object storage), audit logging (cloud audit trail). "
+        "compute (containers and functions), storage (object storage), audit logging (cloud audit trail), CI (build and test runs). "
         f"The newest {m['settle_days']} days are left out until the providers settle them.</p>"
     )
     return page(f"Finks infrastructure cost trends {days[-1]}", "\n".join(h), "../")
