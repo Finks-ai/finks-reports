@@ -564,6 +564,18 @@
    "2026-10-18",
    "2026-10-24"
   ],
+  "overspending": [
+   {
+    "area": "network",
+    "effect": "About two-thirds less egress cost for that service.",
+    "found": "2026-10-27",
+    "proposal": "Route development and staging through the production gateway and remove the other two.",
+    "resolved": null,
+    "status": "proposed",
+    "title": "Three egress gateways where one would do",
+    "what": "One internal service runs a separate network egress gateway per environment (development, staging and production), all in the same availability zone and each with very little traffic, so nearly all of their cost is the fixed hourly charge."
+   }
+  ],
   "settle_days": 2
  },
  "eval": {
@@ -2197,7 +2209,7 @@
    {
     "month": null,
     "name": "Exchange coverage beyond the US",
-    "status": "planned"
+    "status": "in progress"
    },
    {
     "month": null,
